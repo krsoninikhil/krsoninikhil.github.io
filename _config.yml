@@ -1,0 +1,32 @@
+# Dependencies
+#markdown:         redcarpet
+highlighter: pygments
+
+# Permalinks
+permalink: pretty
+
+# Setup
+title: Nikhil Soni
+tagline: (@krsoninikhil)
+description:
+url: http://nikhilsoni.me
+
+author:
+  name: Nikhil Soni
+  url: https://twitter.com/krsoninikhil
+
+contact:
+  email: mailto:krsoninikhil@gmail.com
+  twitter: https://twitter.com/krsoninikhil
+  angellist: https://angel.co/krsoninikhil
+  aboutme: https://about.me/krsoninikhil
+  instagram: https://wwww.instagram.com/krsoninikhil
+
+links:
+  source: https://github.com/krsoninikhil.github.io
+  github: https://github.com/krsoninikhil
+  resume: https://goo.gl/Gngzhi
+
+paginate: 5
+gems:
+ - jekyll-paginate
