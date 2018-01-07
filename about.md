@@ -8,10 +8,10 @@ title: About
 </p> -->
 
 <p>
-  Hey, I’m Nikhil. I graduated this year (2017) from IIT Roorkee. I write software for food, fun and to solve interesting problems. Currently working for CGI as Associate Software Engineer in Bengaluru, India.
+  Hey, I’m Nikhil. Graduated in May 2017 from IIT Roorkee. I write software for food, fun and to solve interesting problems. Currently working for CGI as Associate Software Engineer in Bengaluru, India.
 </p>
 <p>
-  I like reading about science, technology and business. Sometimes try to swim and play tennis.
+  I like reading about science, technology, business and life. Sometimes try to swim and play tennis.
 </p>
 
 ![Display Picture](/public/profile.jpg)

@@ -1,13 +1,13 @@
 # Dependencies
 #markdown:         redcarpet
-highlighter: pygments
+highlighter: rouge
 
 # Permalinks
 permalink: pretty
 
 # Setup
 title: Nikhil Soni
-tagline: (@krsoninikhil)
+tagline: <a href="https://twitter.com/krsoninikhil">@krsoninikhil</a>
 description:
 url: http://nikhilsoni.me
 
@@ -16,7 +16,7 @@ author:
   url: https://twitter.com/krsoninikhil
 
 contact:
-  email: mailto:krsoninikhil@gmail.com
+  email: krsoninikhil@gmail.com
   twitter: https://twitter.com/krsoninikhil
   angellist: https://angel.co/krsoninikhil
   aboutme: https://about.me/krsoninikhil
@@ -25,7 +25,7 @@ contact:
 links:
   source: https://github.com/krsoninikhil.github.io
   github: https://github.com/krsoninikhil
-  resume: https://goo.gl/Gngzhi
+  resume: https://goo.gl/My8bsV
 
 paginate: 5
 gems:
