@@ -3,7 +3,7 @@ congratulations! This is going to be great. However, the part after
 this is what's hard and takes time. You might already be missing some
 of the very basic functionalities like opening a project file without
 typing it's full path or searching something project wide that you are
-very acustommed to. These features usually comes out of the box or by
+very accustomed to. These features usually comes out of the box or by
 installing some extensions that does not require any confriguration,
 with most of graphics based editors like Atom, VS Code or Sublime. If
 that is the case, keep reading. When I first started using Emacs, I
