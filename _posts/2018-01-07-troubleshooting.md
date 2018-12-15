@@ -4,4 +4,5 @@ And looking back last 2-3 year, I've spent countless hours on installing and fix
 
 - [Breaking And Fixing Of Pacman With Openssl](/2018/01/07/breaking-and-fixing-of-pacman-with-openssl/)
 
-Any feedback is most [welcome](/contact).
+--
+[@krsoninikhil](https://twitter.com/krsoninikhil)
