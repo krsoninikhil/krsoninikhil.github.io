@@ -97,11 +97,12 @@ one by one.
 (global-set-key (kbd "C-S-d") 'duplicate-line)
 ```
 
-   Now, you can use `C-S-d` (Control-Shift-d) to duplicate current
-   line. Change these key combination to whatever suits you.
+Now, you can use `C-S-d` (Control-Shift-d) to duplicate current
+line. Change these key combination to whatever suits you.
 
 2. Add these lines for using `C-S-j` and `C-S-k` to move a line up or
    down one line.
+
 ```elisp
 (defun move-line-down ()
   (interactive)
@@ -195,7 +196,11 @@ option.
 8. I use
    [`dumb-jump`](https://github.com/jacktasia/dumb-jump/tree/260054500d4731c36574b6cbc519de29fdd22f43)
    package to jump to definitions using `C-M-g`. Add this line to auto enable it
-   every time: `(dumb-jump-mode)`
+   every time:
+
+```elisp
+`(dumb-jump-mode)`
+```
 
 9. If you jump back to function call by `C-M-p`.
 
@@ -203,7 +208,11 @@ option.
     project wide search with `projectile` works good for me.
 
 11. I use `fymd` package to real time markdown preview, with this
-    key binding: `(global-set-key (kbd "<f9>") 'flymd-flyit)`
+    key binding:
+
+```elisp
+`(global-set-key (kbd "<f9>") 'flymd-flyit)`
+```
 
 Most of the snippetes on this page are taken from
 [emacsrocks.com](http://emacsrocks.com/),
