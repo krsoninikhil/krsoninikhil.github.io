@@ -148,7 +148,10 @@ line. Change these key combination to whatever suits you.
    [`company`](http://stable.melpa.org/#/company), which can be
    installed by `M-x install-package company-mode`. And can be
    activated by adding this line to `init.el`:
-   `(add-hook 'after-init-hook 'global-company-mode)`
+
+```elisp
+(add-hook 'after-init-hook 'global-company-mode)
+```
 
 5. I use combination of
    [`projectile`](https://www.projectile.mx/en/latest/) and
@@ -191,7 +194,11 @@ option.
 
 7. Built-in `speedbar` provides good enough interactive tree view of
    project. It can be started with `M-x speedbar`. It's easier to bind
-   it to some key like F8 using `(global-set-key (kbd "<f8>") 'speedbar)`
+   it to some key like F8 using
+
+```elisp
+(global-set-key (kbd "<f8>") 'speedbar)
+```
 
 8. I use
    [`dumb-jump`](https://github.com/jacktasia/dumb-jump/tree/260054500d4731c36574b6cbc519de29fdd22f43)
@@ -199,7 +206,7 @@ option.
    every time:
 
 ```elisp
-`(dumb-jump-mode)`
+(dumb-jump-mode)
 ```
 
 9. If you jump back to function call by `C-M-p`.
@@ -211,7 +218,7 @@ option.
     key binding:
 
 ```elisp
-`(global-set-key (kbd "<f9>") 'flymd-flyit)`
+(global-set-key (kbd "<f9>") 'flymd-flyit)
 ```
 
 Most of the snippetes on this page are taken from
