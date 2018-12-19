@@ -1,5 +1,5 @@
 I used to use Atom, it's MIT licensed, got tons of
-extensions. Everything was great, life was good. Then Microsoft baught
+extensions. I was happy, life was good. Then Microsoft baught
 Github. Soon enough, people started talking about [future of
 Atom](https://news.ycombinator.com/item?id=17258419). Since they
 already have something similar called VSCode, I too started worrying
