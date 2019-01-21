@@ -2,9 +2,9 @@ If you have already decided to go with Emacs as your choice of editor,
 congratulations! This is going to be great. However, the part after
 this is what's hard and takes time. You might already be missing some
 of the very basic functionalities like opening a project file without
-typing it's full path or searching something project wide that you are
+typing the full path or searching something project-wide that you are
 very accustomed to. These features usually comes out of the box or by
-installing some extensions that does not require any confriguration,
+installing some extensions that do not require any configuration,
 with most of graphics based editors like Atom, VS Code or Sublime. If
 that is the case, keep reading. When I first started using Emacs, I
 spent quite some time reading and trying out stuffs to make these
@@ -19,14 +19,14 @@ do all the stuff that you're used to.
 Emacs is built around the philosophy of extensibility and flexibility
 -- being able to hook your own code at any event of your choice is
 what makes it awesome. And because of that, the huge community around
-the editor have highly opiniated setups based on what works for
+the editor have highly opinionated setups based on what works for
 them. There exists modified versions of Emacs like Prelude, Spacemacs,
 etc. that are loaded with a lot of functionalities you wouldn't find
 anywhere else but in my personal opinion, it's good to know what is cake
 and what are the cherries.
 
 Before we start, familiarize yourself with basic key combinations and
-terminology of Emacs. Built in tutorial explains that very neatly
+terminology of Emacs. Built-in tutorial explains that very neatly
 which you can read by `C-h t` (hold control key and press h, then
 leave control key and press t). [This awesome
 article](http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs/)
@@ -38,10 +38,10 @@ functionalities:
 1. Being able to duplicate current line
 2. Move or drag a line up and down
 3. Use multiple cursors to edit at a time
-4. Auto completion of variables and functions name
+4. Auto-completion of variables and functions name
 5. Fuzzy file search i.e. Ctrl-P or Cmd-Shift-o in other editors
-6. Searching a term of string in whole project
-7. A tree view of project to explore file structure
+6. Searching a term of string in the whole project
+7. A tree view of the project to explore file structure
 
    Few more things that I had installed extensions for in VSCode:
 
@@ -50,9 +50,9 @@ functionalities:
 10. Find all the reference of a function
 11. Markdown preview
 
-Surprisingly, some these are as easy as hooking a couple of lines of
-code to a key stroke, for some a little more than couple of lines so
-we'll use community developed packages for them. Latest version of
+Surprisingly, some of these are as easy as hooking a couple of lines of
+code to a keystroke, for some a little more than a couple of lines so
+we'll use community developed packages for them. The latest version of
 Emacs ships with a package manager -- `package.el`. We just need to
 add MELPA repository to it so it can search packages for us. Add this
 Emacs Lisp code to your `~/.emacs.d/init.el` file to do that.
@@ -71,7 +71,7 @@ Emacs Lisp code to your `~/.emacs.d/init.el` file to do that.
 ```
 
 This will also give priorities to repositories to avoid duplicate
-listing in case of certain packages being present in move than
+listing in case of certain packages being present in more than
 one. After adding this restart Emacs to reload `init.el` and do this:
 `M-x package-refresh-contents`. Now you are ready to install most of
 the packages. Note that you can also reload you `init.el` by doing
@@ -141,10 +141,10 @@ one by one.
     ```
 
    These commands do exactly what they look like. To get out of multiple
-   cursors, use `C-g`, last line in above code prevents using `<RETURN>`
-   key to do same. You can read more about it in project [doc page](http://stable.melpa.org/#/multiple-cursors).
+   cursors, use `C-g`, the last line in above code prevents using `<RETURN>`
+   key to do same. You can read more about it in the project [doc page](http://stable.melpa.org/#/multiple-cursors).
 
-4. To let Emacs auto complete function names and variables, I use
+4. To let Emacs auto-complete function names and variables, I use
    [`company`](http://stable.melpa.org/#/company), which can be
    installed by `M-x package-install <RET> company-mode <RET>`. And can be
    activated by adding this line to `init.el`:
@@ -153,7 +153,7 @@ one by one.
     (add-hook 'after-init-hook 'global-company-mode)
     ```
 
-5. I use combination of
+5. I use the combination of
    [`projectile`](https://www.projectile.mx/en/latest/) and
    [`helm`](https://emacs-helm.github.io/helm/) package to deal with
    fuzzy file search. Configurations for `helm` can be a bit overwhelming so
@@ -177,20 +177,20 @@ one by one.
     ```
 
    This will allow you to use `C-c p f` for opening your project files
-   just by typing file name and not whole path. And when you use `C-x
+   just by typing file name and not the whole path. And when you use `C-x
    C-f` to open a file that is outside the project directory, you can
    type any part of the directory or file name or even non contiguous
-   parts separated by space to narrow down the suggetions e.g. if you
+   parts separated by space to narrow down the suggestions e.g. if you
    want to select `controllers` out of `controllers` and `contol` folder
    name, you can type `co s`. Use `C-j` (not TAB) to choose highlighted
    option.
 
-6. `projectile` can also be used to search for something in whole
+6. `projectile` can also be used to search for something in the whole
    project: `C-c p s s`. This command used `ag` system package, which
    should definitely have and a `ag.el` Emacs package. I don't
    generally use project wild search and replace but if that's your
    thing, [this](https://emacs.stackexchange.com/a/243/21028) answer
-   from Stackexchange explains great way of doing so.
+   from Stackexchange explains a great way of doing so.
 
 7. Built-in `speedbar` provides good enough interactive tree view of
    project. It can be started with `M-x speedbar`. It's easier to bind
@@ -212,7 +212,7 @@ one by one.
 9. If you jump back to function call by `C-M-p`.
 
 10. To find all the references of a function, priviously mentioned
-    project wide search with `projectile` works good for me.
+    project-wide search with `projectile` works well for me.
 
 11. I use `fymd` package to real time markdown preview, with this
     key binding:
@@ -221,10 +221,10 @@ one by one.
     (global-set-key (kbd "<f9>") 'flymd-flyit)
     ```
 
-Most of the snippetes on this page are taken from
+Most of the snippets on this page are taken from
 [emacsrocks.com](http://emacsrocks.com/),
 [whattheemacsd.com](http://whattheemacsd.com/) and official
-documentations of mentioned packages. Both of these resources are
+documentation of mentioned packages. Both of these resources are
 great places to learn more about
 Emacs. [Here](https://github.com/krsoninikhil/dotfiles/tree/master/.emacs.d)
 is my `.emacs.d` directory, if don't feel like doing this all by yourself,
