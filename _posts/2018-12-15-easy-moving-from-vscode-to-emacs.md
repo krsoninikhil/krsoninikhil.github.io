@@ -209,7 +209,7 @@ one by one.
     (dumb-jump-mode)
     ```
 
-9. If you jump back to function call by `C-M-p`.
+9. You can jump back to function call by `C-M-p`.
 
 10. To find all the references of a function, priviously mentioned
     project-wide search with `projectile` works well for me.
