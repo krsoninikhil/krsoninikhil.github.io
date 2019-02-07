@@ -11,8 +11,10 @@ anything. Because of these reasons I've started to write about
 breaking and fixing things publicly. Here is the list of the posts on
 same:
 
-- [Breaking And Fixing Of Pacman With
-  Openssl](/2018/01/07/when-your-sudo-and-pacman-breaks)
+- [When Your Sudo and Pacman
+  Breaks](/2018/01/07/when-your-sudo-and-pacman-breaks)
+- [No support for OPTIONS
+  request](/2018/03/23/what-is-that-options-request-before-post-and-cross-origin-resource-sharing)
 
 --
 [@krsoninikhil](https://twitter.com/krsoninikhil)
