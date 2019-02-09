@@ -50,12 +50,13 @@ functionalities:
 10. Find all the reference of a function
 11. Markdown preview
 
-Surprisingly, some of these are as easy as hooking a couple of lines of
-code to a keystroke, for some a little more than a couple of lines so
-we'll use community developed packages for them. The latest version of
-Emacs ships with a package manager -- `package.el`. We just need to
+Surprisingly, some of these are as easy as hooking a couple of lines
+of code to a keystroke, for some a little more than a couple of lines
+so we'll use community developed packages for them. The latest version
+of Emacs ships with a package manager -- `package.el`. We just need to
 add MELPA repository to it so it can search packages for us. Add this
-Emacs Lisp code to your `~/.emacs.d/init.el` file to do that.
+Emacs Lisp ([ref](https://emacs.stackexchange.com/a/2989/21028)) to
+your `~/.emacs.d/init.el` file to do that.
 
 ```elisp
 (require 'package)
@@ -86,13 +87,9 @@ one by one.
     ```elisp
     (defun duplicate-line ()
       (interactive)
-      (let ((col (current-column)))
-        (move-beginning-of-line 1)
-        (kill-line)
-        (yank)
-        (newline)
-        (yank)
-        (move-to-column col)))
+      (save-mark-and-excursion
+        (beginning-of-line)
+        (insert (thing-at-point 'line t))))
 
     (global-set-key (kbd "C-S-d") 'duplicate-line)
     ```
@@ -243,5 +240,22 @@ I would highly appreciate any feedback you may have or to listen about
 any other features you miss from your old editor and should be in this
 list.
 
---
-[@krsoninikhil](https://twitter.com/krsoninikhil)
+[Edit]
+
+Code snippet for duplicating line (first point) has been updated with
+current cleaner version suggested by Philip K., earlier
+it was:
+
+```elisp
+(defun duplicate-line ()
+   (interactive)
+   (let ((col (current-column)))
+     (move-beginning-of-line 1)
+     (kill-line)
+     (yank)
+     (newline)
+     (yank)
+     (move-to-column col)))
+```
+
+-- [@krsoninikhil](https://twitter.com/krsoninikhil)
