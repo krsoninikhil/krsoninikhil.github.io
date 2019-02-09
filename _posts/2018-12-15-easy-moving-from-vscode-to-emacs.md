@@ -243,8 +243,8 @@ list.
 [Edit]
 
 Code snippet for duplicating line (first point) has been updated with
-current cleaner version suggested by Philip K., earlier
-it was:
+current cleaner version suggested by [Philip K.](https://zge.us.to/),
+earlier it was:
 
 ```elisp
 (defun duplicate-line ()
