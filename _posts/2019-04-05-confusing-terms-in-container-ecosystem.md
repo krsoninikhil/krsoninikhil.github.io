@@ -1,10 +1,10 @@
-Containers are great and software components which enables them are
+Containers are great, infact software components which enable them are
 some of my favourite projects. But the more you try to know about how
 they work, more the terminology gets confusing. Docker, Docker Engine,
 containerd, runC, rkt, cri-o -- all describing themselves are
 container runtime, are they alternatives or complimentary components?
-Based on my understanding from trying to contribute to one of these
-projects, I've summarized these terms below assuming you've used
+Based on my understanding while trying to contribute to one of these
+projects, I've summarized these terms below. This assumes you've used
 containers before. If you have any suggestions, please [let me
 know](/contact).
 
