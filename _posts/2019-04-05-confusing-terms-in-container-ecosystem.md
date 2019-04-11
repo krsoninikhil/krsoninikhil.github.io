@@ -21,7 +21,7 @@ i.e. `runc` can create, start and delete a container. Generally, a
 more comprehensive runtime will be required in real systems and can be
 implemented on top of `runC`. This runtime would be responsible for
 managing multiple containers at a time and things like downloading
-container images, managing storage and network inferfaces, etc. Widely
+container images, managing storage and network interfaces, etc. Widely
 used example of this runtime is `containerd` which can manage multiple
 containers using runC or any other OCI implementation. Check this
 [post by Michael Crosby][5] to know more about how `containerd`
@@ -65,7 +65,7 @@ It has a runtime which supports OCI images but as of now it does not
 follow exact `runtime-spec`. Think of `rkt` as alternative to Docker
 Engine along with `containerd` and `runC`. `rkt` also has CRI
 implementation for using with Kubernetes, called `rktlet`. Following
-image captures this comparision along with other details.
+image captures this comparison along with other details.
 
 ![rkt vs Docker][10]
 
