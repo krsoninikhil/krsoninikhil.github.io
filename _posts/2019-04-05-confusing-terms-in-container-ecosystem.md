@@ -1,20 +1,20 @@
-Containers are great, infact software components which enable them are
-some of my favourite projects. But the more you try to know about how
-they work, more the terminology gets confusing. Docker, Docker Engine,
+Containers are great, in fact, software components which enable them are
+some of my favorite projects. But the more you try to know about how
+they work, the more terminology gets confusing. Docker, Docker Engine,
 containerd, runC, rkt, cri-o -- all describing themselves are
-container runtime, are they alternatives or complimentary components?
+container runtime, are they alternatives or complementary components?
 Based on my understanding while trying to contribute to one of these
 projects, I've summarized these terms below. This assumes you've used
 containers before. If you have any suggestions, please [let me
 know](/contact).
 
 Going bottom-up, Open Container Initiative or OCI is a project by
-Linux Foundation which standarises the container runtime, image and
-distribution spectifications, these specifications are released as
+Linux Foundation which standardizes the container runtime, image and
+distribution specifications, these specifications are released as
 [runtime-spec][0], [image-spec][1] and [distribution-spec][2]
 respectively.
 
-[runC][3] is one of the many implementation of `runtime-spec`, other
+[runC][3] is one of the many implementations of `runtime-spec`, other
 implementations can be found [here][4]. Now given the specs, these
 implementations have very limited and defined scope in container world
 i.e. `runc` can create, start and delete a container. Generally, a
@@ -34,8 +34,8 @@ interface for using any runtime with its container manager called
 `kubelet`. That means, `containerd` and `cri-o` are alternative
 runtimes for using with `kubelet`.
 
-Now, `kubelet` and Docker Engine are higher level abstraction that
-uses and depend on above mentioned runtimes. Docker Engine uses
+Now, `kubelet` and Docker Engine are a higher level abstractions that
+use and depend on above-mentioned runtimes. Docker Engine uses
 `containerd` and adds things like networking, volumes and security to
 the containers.
 
@@ -44,26 +44,26 @@ Following image shows how these pieces fit together visually.
 ![Container Ecosystem][7] *Source:
  [https://blog.docker.com/2017/08/what-is-containerd-runtime/][8]*
 
-Docker, the company, also provides an end-user cli client `docker` to
+Docker, the company, also provides an end-user CLI client `docker` to
 interact with Docker Engine and what we use directly on our local
-systems to manange containers. Don't be confused if Docker, containerd
+systems to manage containers. Don't be confused if Docker, containerd
 and runC all are described as runtimes, they are classified as
 runtimes but with different and very defined scopes.
 
 Another interesting project is the Moby Project, which you might have
-came across if you've been reading about these components. So, earlier
+come across if you've been reading about these components. So, earlier
 Docker used to be a huge piece of software by Docker, the
 company. With time, they separated out the major components like
 `containerd` which can be used and developed independently. All these
 components that Docker now uses as upstream along with some tools and
 framework to assemble them, comes under this [Moby Project][9]. [This
-introductory post][12] talks about same in detail.
+introductory post][12] talks about the same in detail.
 
-Another parallel container project is called `rkt`, which implements
+Another parallel container project is called `rkt`, which implements a
 whole different approach to manage containers and developed by CoreOS.
-It has a runtime which supports OCI images but as of now it does not
-follow exact `runtime-spec`. Think of `rkt` as alternative to Docker
-Engine along with `containerd` and `runC`. `rkt` also has CRI
+It has a runtime which supports OCI images but as of now, it does not
+follow exact `runtime-spec`. Think of `rkt` as an alternative to
+Docker Engine along with `containerd` and `runC`. `rkt` also has CRI
 implementation for using with Kubernetes, called `rktlet`. Following
 image captures this comparison along with other details.
 
@@ -75,13 +75,13 @@ image captures this comparison along with other details.
 To summarize, `runC` is OCI spec implementation for creating, starting
 and deleting containers. `containerd` uses `runC` and provides a
 broader runtime for containers. Docker client uses Docker Engine on
-local systems which is built on top of `containerd`. Docker uses Moby
+local systems, which is built on top of `containerd`. Docker uses Moby
 Project as upstream which includes all these components. Kubernetes
 can use `containerd`, `cri-o` or `rktlet` as it's container
 runtime. `rkt` is an alternative to Docker and has all components of
-it's own.
+its own.
 
-PS: Thanks [Fakabbir Amin][14] for reading draft of this post.
+PS: Thanks [Fakabbir Amin][14] for reading the draft of this post.
 
 [0]: https://github.com/opencontainers/runtime-spec
 [1]: https://github.com/opencontainers/image-spec
