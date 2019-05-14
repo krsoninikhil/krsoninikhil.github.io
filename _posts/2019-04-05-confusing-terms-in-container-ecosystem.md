@@ -81,6 +81,16 @@ can use `containerd`, `cri-o` or `rktlet` as it's container
 runtime. `rkt` is an alternative to Docker and has all components of
 its own.
 
+[Edit]
+
+Adding about `LXC` and `libcontainer`, they both use kernel features
+like namespaces and cgroups to provide the virtualization and have
+different motivations. Docker Engine used to use `LXC` before they
+created their own `libcontainer`. So, `runC` is mostly just a wrapper
+around `libcontainer`.
+
+[Reddit discussion link.][15]
+
 PS: Thanks [Fakabbir Amin][14] for reading the draft of this post.
 
 [0]: https://github.com/opencontainers/runtime-spec
@@ -98,3 +108,4 @@ PS: Thanks [Fakabbir Amin][14] for reading the draft of this post.
 [12]: https://blog.docker.com/2017/04/introducing-the-moby-project/
 [13]: https://kubernetes.io/
 [14]: https://fakabbir.github.io/
+[15]: https://www.reddit.com/r/docker/comments/bc4de6/brief_writeup_explaining_confusing_terms_in/
