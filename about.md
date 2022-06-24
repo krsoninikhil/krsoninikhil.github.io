@@ -5,7 +5,7 @@ title: About
 
 <p class=""> Hey there 👋! My name is Nikhil. Graduated in May 2017 from
   IIT Roorkee. I write software for food, fun and to solve interesting
-  problems. I joined <h href="https://uniacco.com/about-us"
+  problems. I joined <a href="https://uniacco.com/about-us"
   target="_blank">UniAcco</a>'s founding team in 2019 to lead it's
   engineering and product team. Before that, I was working with <a
   href="https://www.cashfree.com/" target="_blank"> Cashfree </a> (YC
