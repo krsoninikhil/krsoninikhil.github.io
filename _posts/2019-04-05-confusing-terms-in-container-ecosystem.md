@@ -41,8 +41,8 @@ the containers.
 
 Following image shows how these pieces fit together visually.
 
-![Container Ecosystem][7] *Source:
- [https://blog.docker.com/2017/08/what-is-containerd-runtime/][8]*
+![Container Ecosystem][7]
+*Source: [https://blog.docker.com/2017/08/what-is-containerd-runtime/][8]*
 
 Docker, the company, also provides an end-user CLI client `docker` to
 interact with Docker Engine and what we use directly on our local
@@ -102,8 +102,8 @@ PS: Thanks [Fakabbir Amin][14] for reading the draft of this post.
 [4]: https://github.com/opencontainers/runtime-spec/blob/master/implementations.md
 [5]: https://blog.docker.com/2016/04/docker-containerd-integration/
 [6]: https://github.com/kubernetes-sigs/cri-o
-[7]: https://i2.wp.com/blog.docker.com/wp-content/uploads/974cd631-b57e-470e-a944-78530aaa1a23-1.jpg?w=906&ssl=1
-[8]: /public/docker-runtime.png
+[7]: /public/docker-runtime.png
+[8]: https://blog.docker.com/2017/08/what-is-containerd-runtime/
 [9]: https://mobyproject.org/projects/
 [10]: /public/rkt-vs-docker.png
 [11]: https://coreos.com/rkt/docs/latest/rkt-vs-other-projects.html#rkt-vs-docker
