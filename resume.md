@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume
+title: Redirecting...
 ---
 
 <a href="{{ site.links.resume }}">Click here if you are not redirected.<a>
