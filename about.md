@@ -13,6 +13,11 @@ title: About
 
 <p class=""> If you're in Bengaluru and in for a beer or coffee,
   <a href="/contact"> let me know </a>. I like listening people's story,
-  talking and reading about science, technology, business and life.</p>
+  talking and reading about science, technology, business, history and life.</p>
 
 ![Display Picture](/public/profile.jpg)
+
+<h3> Hire Me </h3> If you have interesting projects that I can help
+with, get in touch. Please go through <a href="/terms"> Terms &
+Conditions </a> along with <a href="/privacy-policy"> Privacy Policy
+</a>
