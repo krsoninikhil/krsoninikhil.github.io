@@ -8,7 +8,7 @@ Musician figured out that sounds of what frequencies when played together or in 
 
 Piano or a keyboard is the best instrument to visualise this. Each key is a note and 12 keys (7 white, 5 black) keep repeating themselves from lower frequency octave to higher. You can go into how those interval ratio are decided but that would be too deep for this post. 
 
-![Keyboard](Introduction%20to%20Music%20-%20Part%201%20882a161afa6041e382d8ddd82519e04d/Untitled.png)
+![Keyboard](/public/images/keyboard.png)
 
 *Source: [http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/piano-keyboard-diagram.gif](http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/piano-keyboard-diagram.gif)*
 
@@ -46,7 +46,7 @@ In keyboard, the accidentals are fitted in between pure keys while guitar doesnâ
 
 Musicians have defined a scales as sequence of notes or relative steps from a key. For Major scales of a key, steps are defined as - **Whole Whole Half Whole Whole Whole Half**. So a C Major scale would be, referring keyboard image above while taking the whole or half step â€” `C D E F G H A B`, i.e. all white keys of the keyboard.
 
-![Scale](Introduction%20to%20Music%20-%20Part%201%20882a161afa6041e382d8ddd82519e04d/Untitled%201.png)
+![Scale](/public/images/scale.png)
 
 *Source: [http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/major-scale-formula.png](http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/major-scale-formula.png)*
 

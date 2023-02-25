@@ -15,7 +15,7 @@ title: About
   <a href="/contact"> let me know </a>. I like listening people's story,
   talking and reading about science, technology, business, history and life.</p>
 
-![Display Picture](/public/profile.jpg)
+![Display Picture](/public/images/profile.jpg)
 
 <h3> Hire Me </h3> If you have interesting projects that I can help
 with, get in touch. Please go through <a href="/terms"> Terms &
