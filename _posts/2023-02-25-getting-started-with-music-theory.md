@@ -2,6 +2,7 @@
 
 Last month I tried understanding how music is written and communicated and I have to say, once you get to know the basics of music theory, the appreciation of good music increases exponentially. You can see what the musician just did that made you like it so much, why guitar players make weird finger pattern while playing. This is me just logging my understanding and taking notes to refer later on. If you understand music, do share your feedback.
 
+
 ## Introduction
 
 Musician figured out that sounds of what frequencies when played together or in a sequence with particular interval sounds good and what doesn’t. Most of the western music is created by dividing a range of frequency called an *octave* in 12 intervals of a fixed ratio defined by *notes*. Once the ratio of intervals between the notes is defined, same ratio can give you notes of higher or lower octave depending on where you start. So, if we start at 220Hz, we have one octave from 220 to 440Hz divided into 12 intervals by notes to reach 440Hz. And the next octave can start with 440Hz to 880Hz.
@@ -11,6 +12,7 @@ Piano or a keyboard is the best instrument to visualise this. Each key is a note
 ![Keyboard](/public/images/keyboard.png)
 
 *Source: [http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/piano-keyboard-diagram.gif](http://www.piano-keyboard-guide.com/wp-content/uploads/2015/05/piano-keyboard-diagram.gif)*
+
 
 ## Glossary
 
@@ -36,11 +38,13 @@ Piano or a keyboard is the best instrument to visualise this. Each key is a note
 
 **Melody:** Chords played along with other notes.
 
+
 ## Notes
 
 Music theory divides these notes as **pure** and **accidental**. Seven Pure denoted by English alphabets - A, B, C, D, E, F, G and five accidentals denoted by # (sharp) or b (flat) relative to pure note e.g. note between A and B is called A# or Bb. In keyboard, white keys are pure notes (repeating from A to G) and black keys are accidentals notes represented in terms of pure note so, black key between C and D can be called C# or Db. So 12 notes would be — A, A#/Bb, B, C, C#/Db, D, D#/Eb, E, F, F#/Fb, G, G#/Cb. Notice that there is no B# and E#, this is the way intervals are defined by musicians, if you find out the reasoning, I would love to [hear](https://nikhilsoni.me/contact) it 🤔. 
 
 In keyboard, the accidentals are fitted in between pure keys while guitar doesn’t have that distinction, this might have to do something the way instruments are played i.e. to make the whole octave reachable for one hand 🤷.
+
 
 ## Major and Minor Scales
 
@@ -52,23 +56,21 @@ Musicians have defined a scales as sequence of notes or relative steps from a ke
 
 Similarly, for a minor scale of a key the sequence of steps is defined as — **Whole Half Whole Whole Half Whole Whole**. So the notes of C Minor scale would be `C D Eb F G Ab Bb C`.  Notice that 2nd, 4th and 5th intervals have the same note for major and minor scale.
 
-<aside>
+```
 🎵 Mojor Scale Steps - W W H W W W H
-Minor Scale Steps - W H W W H W W
-
-</aside>
+   Minor Scale Steps - W H W W H W W
+```
 
 A chord on a scale can also be defined as major or minor depending on which scale the 3rd interval is falling, as the 5th is going to be same in major or minor. So 4th degree chord or triad on C Minor scale is `F Ab C`  which would be called a F Minor chord (Fm) as it starts with F and 3rd is falling in minor scale of F and 2nd degree triad on C Major scale is `D F A` which would be a D Minor (Dm) as it starts with D and 3rd is falling on minor scale of D. 
 
-<aside>
-💡 Now, since 5th is same in a major and minor scale and 3rd of a minor scale is 3 half steps away from root and 3rd of a major scale is 4 half steps away, you can get a major triad by taking *4 then 3 half steps* from root and minor triad by taking *3 then 4 half steps*.
 
-</aside>
+> 💡 Now, since 5th is same in a major and minor scale and 3rd of a minor scale is 3 half steps away from root and 3rd of a
+major scale is 4 half steps away, you can get a major triad by taking *4 then 3 half steps* from root and minor triad by ?> taking *3 then 4 half steps*.
 
-<aside>
-💡 In other words, you can get a minor from a major chord by lowering a half step on the 3rd interval and minor chord by raising the 3rd interval by a half step. For example, Dm is `D F A` and D major chord (written as just D) would be `D F# A`.
 
-</aside>
+
+> 💡 In other words, you can get a minor from a major chord by lowering a half step on the 3rd interval and minor chord by raising the 3rd interval by a half step. For example, Dm is `D F A` and D major chord (written as just D) would be `D F# A`.
+
 
 ## Degree and Chords Notation
 
@@ -88,6 +90,7 @@ For example, we’ll write chords or triads (root, 3rd and 5th) of C Major scale
 7th degree triad gives something called a diminished chord which is denoted by a naught superscript to the roman number (vii*), we’re ignoring this for now. And similarly, 1-7 degree chords of A Minor scale (A B C D E F G A) would be - Am, B diminished, C, Dm, Em, F, G and denoted as i, ii*, III, iv, v, VI, VII.
 
 Not that we’re clear of popular pattern of frequencies that are used to play music, there is time aspect to it as well. The series of notes follows a certain rhythm or time gap between the tones, understanding that would allow to communicate the speed of music notes in which they should be played. 
+
 
 ## Rhythm
 
