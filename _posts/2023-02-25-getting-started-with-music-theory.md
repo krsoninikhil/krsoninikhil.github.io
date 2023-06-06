@@ -105,3 +105,6 @@ To count or write notes in time i.e. beat, popular notation is -
 | Sixteenth | 1 e & a 2 e & a ... |
 
 Reference - Found [this](https://www.youtube.com/watch?v=rgaTLrZGlk0) explanatory video by Andrew Huang very helpful.
+
+--
+[Nikhil](https://twitter.com/krsoninikhil)
