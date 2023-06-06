@@ -1,5 +1,3 @@
-# Providing AWS MSK (Kafka) access to external services
-
 Setting up private Kafka on AWS is quite straight from the console. Which works well if all your services that depends on Kafka are on same VPC. But if you want to push events from a third party hosted application like [Rudderstack events to Kafka as destination](https://www.rudderstack.com/docs/destinations/streaming-destinations/kafka/), which requires you to provide SASL auth details, it becomes a bit complicated. This article aims to document the process. 
 
 If don’t already have a MSK cluster created, you can use following Terraform script using [this module](https://github.com/krsoninikhil/terraform-modules/tree/main/msk) to create one
@@ -31,10 +29,9 @@ msk_make_public = false
 
 If you used above Terraform script, just change the `msk_make_public` variable to `true` and apply the config again. Note that MSK does not allow public access during creation, so this needs to modified by applying it again after the variable change.
 
-<aside>
+```text
 💡 Gotcha: While creating credentials in Secret Manager for your cluster, you must use “Plaintext” and not the key/value editor, even though it generates the same text. I’m still not why key/value method does not work properly, if you do, please let me know.
-
-</aside>
+```
 
 That’s where the doc ends, so it should be done here? Let’s try to connect the brokers via [kcat](https://github.com/edenhill/kcat)
 
@@ -64,9 +61,6 @@ So, create an IAM user with appropriate policy as mentioned in [this AWS doc](ht
 ```bash
 $ openssl s_client -showcerts -connect broker1:port
 ```
-
-<iframe src="https://gist.github.com/krsoninikhil/3ed02b79d7614dac450dcffc44fa979e" height="500">
-
 
 <script src="https://gist.github.com/krsoninikhil/3ed02b79d7614dac450dcffc44fa979e.js"></script>
 
