@@ -81,5 +81,9 @@ Metadata for all topics ...
 - Use above Go code to create topic and ACL for the provided SCRAM user
 - Now, you can use this user with external services
 
+### Discussion
+
+- [Reddit post](https://www.reddit.com/r/devops/comments/142qfc0/providing_aws_msk_kafka_access_to_external/?utm_source=share&utm_medium=web2x&context=3)
+
 --
 [Nikhil](https://twitter.com/krsoninikhil)
